@@ -1,0 +1,14 @@
+[Unit]
+Description=Anything-LLM Service
+After=network.target
+
+[Service]
+User=your_non_privileged_user
+ExecStart=/opt/anything-llm/startupscript.sh
+Restart=always
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=anything-llm
+
+[Install]
+WantedBy=multi-user.target
