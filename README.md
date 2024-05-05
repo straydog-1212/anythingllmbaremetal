@@ -1,0 +1,2 @@
+# anythingllmbaremetal
+anythingllm bare metal
